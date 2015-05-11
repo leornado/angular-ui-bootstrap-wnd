@@ -211,7 +211,7 @@ module.exports = function(grunt) {
   grunt.registerTask('watch', ['before-test', 'after-test', 'karma:watch', 'delta']);
 
   // Default task.
-  grunt.registerTask('default', ['before-test', 'test', 'after-test']);
+  grunt.registerTask('default', ['before-test', 'after-test']);
 
   grunt.registerTask('enforce', 'Install commit message enforce script if it doesn\'t exist', function() {
     if (!grunt.file.exists('.git/hooks/commit-msg')) {
